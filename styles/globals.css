@@ -46,6 +46,7 @@ input {
   outline: none;
   border: 1px solid transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 ul,

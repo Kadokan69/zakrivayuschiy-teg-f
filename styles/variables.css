@@ -1,4 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
 :root {
   --default-font: 'Itner';
   --accent-font: 'PressStart2P';
@@ -6,6 +7,7 @@
   --title-font-wght: 700;
   --text-color: #000;
   --bg-color: #FFF;
+  --border-color: #000;
   --bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px,transparent 2px, transparent 4px), 
   repeating-linear-gradient(180deg, #d3d3d3 0px,#d3d3d3 2px,transparent 2px, transparent 4px),
   linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);

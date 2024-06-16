@@ -4,11 +4,13 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
 :root.theme-light {
   --text-font-wght: 400;
   --title-font-wght: 700;
   --text-color: #000;
   --bg-color: #FFF;
+  --border-color: #000;
   --bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px,transparent 2px, transparent 4px), 
   repeating-linear-gradient(180deg, #d3d3d3 0px,#d3d3d3 2px,transparent 2px, transparent 4px),
   linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
@@ -17,16 +19,19 @@
 }
 
 @media (prefers-color-scheme: light){
+
     :root {
       --text-font-wght: 400;
       --title-font-wght: 700;
       --text-color: #000;
       --bg-color: #FFF;
+      --border-color: #000;
       --bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px,transparent 2px, transparent 4px), 
       repeating-linear-gradient(180deg, #d3d3d3 0px,#d3d3d3 2px,transparent 2px, transparent 4px),
       linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
       --lable-shadow: #FFF;
     }
+
     }
 
     :root.theme-dark {
@@ -34,6 +39,7 @@
       --title-font-wght: 785;
       --text-color: #00cc14;
       --bg-color: #000;
+      --border-color: #00cc14;
       --bg-gradient: repeating-linear-gradient(90deg, #000 0px, #000 2px,transparent 2px, transparent 4px), 
       repeating-linear-gradient(180deg, #000 0px,#000 2px,transparent 2px, transparent 4px),
       linear-gradient(180deg, #007F0C, #004306);
@@ -41,14 +47,17 @@
     }
 
 @media (prefers-color-scheme: dark){
+
 :root {
   --text-font-wght: 465;
   --title-font-wght: 785;
   --text-color: #00cc14;
   --bg-color: #000;
+  --border-color: #00cc14;
   --bg-gradient: repeating-linear-gradient(90deg, #000 0px, #000 2px,transparent 2px, transparent 4px), 
   repeating-linear-gradient(180deg, #000 0px,#000 2px,transparent 2px, transparent 4px),
   linear-gradient(180deg, #007F0C, #004306);
   --lable-shadow: #000;
 }
+
 }
