@@ -15,7 +15,8 @@
   repeating-linear-gradient(180deg, #d3d3d3 0px,#d3d3d3 2px,transparent 2px, transparent 4px),
   linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
   --lable-shadow: #FFF;
-
+  --bg-decor: #000;
+  --color-decor: #fff;
 }
 
 @media (prefers-color-scheme: light){
@@ -30,6 +31,8 @@
       repeating-linear-gradient(180deg, #d3d3d3 0px,#d3d3d3 2px,transparent 2px, transparent 4px),
       linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a);
       --lable-shadow: #FFF;
+      --bg-decor: #000;
+      --color-decor: #fff;
     }
 
     }
@@ -44,6 +47,8 @@
       repeating-linear-gradient(180deg, #000 0px,#000 2px,transparent 2px, transparent 4px),
       linear-gradient(180deg, #007F0C, #004306);
       --lable-shadow: #000;
+      --bg-decor: #00cc14;
+      --color-decor: #00cc14;
     }
 
 @media (prefers-color-scheme: dark){
@@ -58,6 +63,8 @@
   repeating-linear-gradient(180deg, #000 0px,#000 2px,transparent 2px, transparent 4px),
   linear-gradient(180deg, #007F0C, #004306);
   --lable-shadow: #000;
+  --bg-decor: #00cc14;
+  --color-decor: #00cc14;
 }
 
 }

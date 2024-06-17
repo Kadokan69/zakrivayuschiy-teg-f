@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark">
-    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/mobile-icon.png">
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
@@ -72,7 +72,7 @@
             </defs>
             </svg>
           </button>
-            <button class="card__like-button">
+            <button class="card__like-button button__style">
             <span class="button__text">
               Like
             </span>
@@ -81,7 +81,7 @@
       </article>
     </main>
     <footer>
-      <button class="footer__button" type="button" onclick="window['popup'].showModal()" aria-controls="popup">
+      <button class="footer__button button__style" type="button" onclick="window['popup'].showModal()" aria-controls="popup">
         <svg viewBox="0 0 40 40" class="floppy">
           <use href="./svg/floppy.svg#floppy" >
         </svg>
@@ -96,8 +96,10 @@
         <p>
           Вставьте дискету, чтобы продолжить
       </p>
-        <button class="popup__button button__text" type="button" onclick="window['popup'].close()" aria-controls="popup">
+        <button class="popup__button button__style" type="button" onclick="window['popup'].close()" aria-controls="popup">
+          <span class="button__text">
           ок
+        </span>
         </button>
       </dialog>
     </footer>

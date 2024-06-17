@@ -55,12 +55,24 @@
 
 .theme-menu__button {
   position: relative;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
+
+.theme-menu__button:disabled::before{
+  content: '▶';
+  position: absolute;
+  animation: arrow 0.5s ease-in-out infinite alternate;
+  }
 
 .theme-menu__button[disabled] {
   opacity: 0.6;
   pointer-events: none;
   cursor: none;
+}
+
+.theme-menu__button:not([disabled]):hover  {
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus {
@@ -76,6 +88,14 @@ inset-inline-start: -1px;
 inset-block-end: -1px;
 background-color: var(--text-color);
 transform: scaleX(0);
+opacity: 1;
+transition: transform 0.3s, opacity 0.3s;
+transform-origin: left;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+  opacity: 0.6;
 }
 
 .card {
@@ -152,36 +172,67 @@ transform: scaleX(0);
   background-color: var(--bg-color);*/
   font-family: var(--accent-font);
   font-size: 14px;
+  mix-blend-mode: difference;
+  color: var(--color-decor);
+
 } 
+
+.button__style {
+  padding: 9px 17px;
+  border: 2px solid var(--border-color);
+  position: relative;
+}
+
+.button__style::before {
+  content: '';
+  inset: 0;
+  background-color: var(--bg-decor);
+  transform: scaleX(0);
+  position: absolute;
+  transition: transform 0.5s;
+  transform-origin: left;
+  
+}
+
+.button__style:hover::before {
+  transform: scaleX(1);
+}
+
+
+.button__style:focus {
+  box-shadow: 2px 2px 0 0 var(--border-color);
+}
 
 .card__like-button {
   min-inline-size: 130px;
-  border: 2px solid var(--border-color);
+  
 }
 
-.card__like-button:focus {
+/* .card__like-button:focus {
   box-shadow: 2px 2px 0 0 var(--border-color);
-}
+} */
 
 .footer__button {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 17px;
   margin: 0 auto 100px;
   min-inline-size: 335px;
   min-block-size: 50px;
   background-color: var(--bg-color);
-  border: 2px solid var(--border-color);
+  /* border: 2px solid var(--border-color); */
 }
 
-.footer__button:focus {
+/* .footer__button:focus {
   box-shadow: 2px 2px 0 0 var(--border-color);
-}
+} */
 
 .floppy {
   max-inline-size: 21px;
   max-block-size: 21px;
+  z-index: 1;
+  mix-blend-mode: difference;
+  color: var(--color-decor);
 }
 
 .popup {
@@ -212,5 +263,5 @@ transform: scaleX(0);
   grid-column: span 2;
   line-height: 0.9;
   text-transform: uppercase;
-  margin-block-start: 10px;
+  margin-block-start: 9px;
 }

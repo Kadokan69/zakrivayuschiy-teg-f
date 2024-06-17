@@ -12,59 +12,16 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-
-.theme-menu__button:disabled::before{
-content: '▶';
-position: absolute;
-animation: arrow__button 0.5s ease-in-out infinite alternate;
-}
-
-.theme-menu__button:focus-visible {
-  animation: hover__button 0.3s ease forwards;
-}
-
-.theme-menu__button:not([disabled]):hover  {
-  animation: hover__button 0.3s ease forwards;
-}
-
-.theme-menu__button:focus-visible::after {
-  animation: focus__button 0.3s ease forwards;
-  transform-origin: left;
-}
-
-
-  @keyframes arrow__button {
+@keyframes arrow {
   
-    from {
-      left: -25px
-    }
-
-    to {
-      left: -21px
-    }
+  from {
+    left: -25px
   }
 
-  @keyframes hover__button {
-  
-    from {
-      opacity: 1;
-    }
-
-    to {
-      opacity: 0.6;
-    }
+  to {
+    left: -21px
   }
+}
 
 
-  @keyframes focus__button {
   
-    from {
-      transform: scaleX(0);
-      
-    }
-
-    to {
-      transform: scaleX(1);
-     
-    }
-  }
