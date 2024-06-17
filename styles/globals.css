@@ -44,7 +44,7 @@ input {
   font-size: inherit;
   background: transparent;
   outline: none;
-  border: 1px solid transparent;
+  border: none;
   padding: 0;
   cursor: pointer;
 }

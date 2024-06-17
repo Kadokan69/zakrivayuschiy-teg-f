@@ -178,7 +178,7 @@ transform-origin: left;
 } 
 
 .button__style {
-  padding: 9px 17px;
+  padding: 7px 17px;
   border: 2px solid var(--border-color);
   position: relative;
 }
@@ -205,7 +205,45 @@ transform-origin: left;
 
 .card__like-button {
   min-inline-size: 130px;
-  
+  max-block-size: 38px;
+}
+
+.card__icon-button {
+  max-block-size: 38px;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--border-color);
+}
+
+.like-icon {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-contour);
+  transition-delay: 0.05s;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s ease 0.03s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contour);
 }
 
 /* .card__like-button:focus {
