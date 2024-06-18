@@ -59,12 +59,6 @@
   transition: opacity 0.3s;
 }
 
-.theme-menu__button:disabled::before{
-  content: '▶';
-  position: absolute;
-  animation: arrow 0.5s ease-in-out infinite alternate;
-  }
-
 .theme-menu__button[disabled] {
   opacity: 0.6;
   pointer-events: none;
@@ -227,9 +221,19 @@ transform-origin: left;
   opacity: 0;
 }
 
+.core {
+  fill: transparent;
+  transition: fill 0.3s ease 0.03s;
+}
+
 .main-body {
   fill: transparent;
   transition: fill 0.3s ease;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contour);
+  
 }
 
 .card__icon-button:hover .main-body {
@@ -237,18 +241,36 @@ transform-origin: left;
   transition-delay: 0.05s;
 }
 
-.core {
-  fill: transparent;
-  transition: fill 0.3s ease 0.03s;
+.card__icon-button:active .main-body {
+  fill: var(--heart-color);
+  transition-delay: 0.05s;
 }
 
-.card__icon-button:hover .core {
-  fill: var(--heart-contour);
+.card__icon-button:active .core {
+  fill: var(--heart-color);
 }
 
-/* .card__like-button:focus {
-  box-shadow: 2px 2px 0 0 var(--border-color);
-} */
+.like-icon.is-liked .core {
+  fill: var(--heart-color);
+  
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-color);
+  transition-delay: 0.05s;
+  
+}
+
+.contour {
+  transition-duration: 0.1s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-color);
+  transition-delay: 0.06s;
+  
+}
+
 
 .footer__button {
   display: flex;
