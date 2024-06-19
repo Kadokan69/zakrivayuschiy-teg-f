@@ -156,6 +156,11 @@
   padding-block-end: 25px;
 }
 
+.card__like-button {
+  min-inline-size: 130px;
+  max-block-size: 38px;
+}
+
 .button__text {
   font-family: var(--accent-font);
   font-size: 14px;
@@ -187,10 +192,7 @@
   box-shadow: 2px 2px 0 0 var(--border-color);
 }
 
-.card__like-button {
-  min-inline-size: 130px;
-  max-block-size: 38px;
-}
+
 
 .card__icon-button {
   max-block-size: 38px;
