@@ -111,6 +111,10 @@
 
 .card__images {
   position: relative;
+  border-block-start: 2px solid var(--border-color);
+  border-block-end: 2px solid var(--border-color);
+  block-size: 100vw;
+  max-block-size: 696px;
 }
 
 .card__images-lable {
@@ -120,8 +124,8 @@
   inset-block-start: 25px;
   inset-inline-end: 25px;
   text-shadow: 1px var(--lable-shadow);
-  opacity: 0.5;
   font-size: 14px;
+  z-index: 1;
 }
 
 @supports (
@@ -134,11 +138,6 @@
     text-stroke: 1px var(--lable-shadow);
     text-shadow: none;
   }
-}
-
-.card__img {
-  border-block-start: 2px solid var(--border-color);
-  border-block-end: 2px solid var(--border-color);
 }
 
 .card__text {
@@ -278,12 +277,13 @@
 }
 
 .popup {
+  max-inline-size: 360px;
   font-family: var(--accent-font);
   font-size: 14px;
   color: currentColor;
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
-  grid-template-columns: 1fr 234px;
+  grid-template-columns: 39px 1fr;
   align-items: center;
   gap: 20px;
   padding: 30px;
@@ -308,7 +308,7 @@
 }
 
 .filter-blur {
-  filter: blur(5px);
+  filter: blur(2px);
 }
 
 .filter-contrast {
@@ -320,7 +320,7 @@
 }
 
 .filter-hue {
-  filter: hue-rotate(90deg);
+  filter: hue-rotate(270deg);
 }
 
 .filter-invert {
@@ -332,5 +332,5 @@
 }
 
 .filter-contrast-brightness {
-  filter: contrast(175%) brightness(103%);
+  filter: contrast(75%) brightness(150%);
 }
