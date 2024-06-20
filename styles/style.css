@@ -38,15 +38,15 @@
     clamp(0rem, 11.268vw - 2.641rem, 7.5rem) 25px;
   border: 2px solid var(--border-color);
   background-color: var(--bg-color);
+  text-transform: uppercase;
 }
 
-.header__title {
+.header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
-.header__text {
+.header__title {
   font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
-  text-transform: uppercase;
 }
 
 .theme-menu__list {
@@ -60,7 +60,7 @@
 .theme-menu__button {
   position: relative;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
   text-transform: uppercase;
 }
 
@@ -89,8 +89,8 @@
   transform: scaleX(0);
   opacity: 1;
   transition:
-    transform 0.3s,
-    opacity 0.3s;
+    transform 0.3s ease,
+    opacity 0.3s ease;
   transform-origin: left;
 }
 
@@ -118,8 +118,9 @@
   position: relative;
   border-block-start: 2px solid var(--border-color);
   border-block-end: 2px solid var(--border-color);
-  block-size: 100vw;
+  aspect-ratio: 1 / 1;
   max-block-size: 700px;
+  
 }
 
 .card__images-lable {
@@ -178,6 +179,7 @@
   padding: 7px 17px;
   border: 2px solid var(--border-color);
   position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
 .button__style::before {
@@ -186,7 +188,7 @@
   background-color: var(--bg-decor);
   transform: scaleX(0);
   position: absolute;
-  transition: transform 0.5s;
+  transition: transform 0.5s ease-in-out;
   transform-origin: left;
 }
 
@@ -219,16 +221,17 @@
 
 .core {
   fill: transparent;
-  transition: fill 0.3s ease 0.03s;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .main-body {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button:hover .core {
   fill: var(--heart-contour);
+  animation-delay: 0;
 }
 
 .card__icon-button:hover .main-body {
@@ -243,10 +246,12 @@
 
 .card__icon-button:active .core {
   fill: var(--heart-color);
+  animation-delay: 0;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-color);
+  animation-delay: 0;
 }
 
 .like-icon.is-liked .main-body {
@@ -255,7 +260,7 @@
 }
 
 .contour {
-  transition-duration: 0.1s;
+  transition: fill 0.1s linear;
 }
 
 .like-icon.is-liked .contour {
