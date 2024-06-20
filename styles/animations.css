@@ -20,13 +20,13 @@
 }
 
 @keyframes arrow {
-
+  
   from {
-    left: -25px;
+    left: -16px;
   }
 
   to {
-    left: -21px;
+    left: -20px;
   }
 }
 
@@ -52,7 +52,7 @@
 }
 
 @keyframes sparks {
-  
+
   from {
     opacity: 0;
   }
