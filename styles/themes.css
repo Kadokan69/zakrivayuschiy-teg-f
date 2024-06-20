@@ -34,7 +34,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-
+  
   :root {
     --text-font-wght: 400;
     --title-font-wght: 700;
@@ -89,11 +89,11 @@
   --bg-decor: #00cc14;
   --color-decor: #00cc14;
   --heart-contour: #00cc14;
-  --heart-color: #00cc14;
+  --heart-color: #f00;
 }
 
 @media (prefers-color-scheme: dark) {
-  
+
   :root {
     --text-font-wght: 465;
     --title-font-wght: 785;
@@ -119,6 +119,6 @@
     --bg-decor: #00cc14;
     --color-decor: #00cc14;
     --heart-contour: #00cc14;
-    --heart-color: #00cc14;
+    --heart-color: #f00;
   }
 }
