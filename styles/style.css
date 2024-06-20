@@ -137,7 +137,7 @@
   (text-stroke: 1px var(--lable-shadow)) or
     (-webkit-text-stroke: 1px var(--lable-shadow))
 ) {
-  
+
   .card__images-lable {
     -webkit-text-stroke: 1px var(--lable-shadow);
     text-stroke: 1px var(--lable-shadow);
@@ -149,7 +149,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  padding: 28px 25px;
+  padding: 28px 27px;
   font-size: 18px;
 }
 
