@@ -151,6 +151,7 @@
   gap: 27px;
   padding: 28px 25px;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .card__buttons {
@@ -229,7 +230,7 @@
 
 .card__icon-button:hover .core {
   fill: var(--heart-contour);
-  animation-delay: 0;
+  transition-delay: 0;
 }
 
 .card__icon-button:hover .main-body {
@@ -244,12 +245,12 @@
 
 .card__icon-button:active .core {
   fill: var(--heart-color);
-  animation-delay: 0;
+  transition-delay: 0;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-color);
-  animation-delay: 0;
+  transition-delay: 0;
 }
 
 .like-icon.is-liked .main-body {
@@ -372,3 +373,4 @@
     inset-inline-end: 10px;
   }
 }
+
